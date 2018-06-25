@@ -55,5 +55,7 @@ class Student
     WHERE id = ?
     SQL
   end
+  
+  DB[:conn].execute(sql, self.name)
 
 end
