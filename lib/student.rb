@@ -76,7 +76,7 @@ class Student
     SQL
     
     row = DB[:conn].execute(sql, name)[0]
-    
+    Student.new(row[0], row[1], row[2])
   end
 
 end
