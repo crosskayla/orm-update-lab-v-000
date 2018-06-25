@@ -50,7 +50,8 @@ class Student
   
   def update
     sql = <<-SQL
-    UPDATE students(name, grade)
+    UPDATE students
+    SET name = ?
     SQL
   end
 
